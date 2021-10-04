@@ -1,3 +1,43 @@
+@mixin media-small {
+  @media screen and (min-width: 576px) {
+    @content;
+  }
+}
+
+@mixin media-medium {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-large {
+  @media screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin media-extra-large {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
 @mixin transition-basic {
   transition: all 0.3s ease-out;
+}
+
+@mixin link-behaviour {
+  cursor: pointer;
+  text-decoration: none;
+
+  &:link,
+  &:visited {
+    color: $white-bright;
+  }
+
+  &:focus,
+  &:hover,
+  &:active {
+    color: $blue-bright;
+  }
 }

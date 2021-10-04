@@ -61,3 +61,6 @@ h5 {
 h6 {
   font-size: 1rem;
 }
+
+@import './components/Navbar/navbar.scss';
+@import './rwd.scss';
