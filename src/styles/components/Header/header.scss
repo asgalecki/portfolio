@@ -1,0 +1,34 @@
+.header {
+  margin: 0 1rem;
+  padding: 7rem 0rem 2rem 0rem;
+  border-bottom: 1px solid $blue-bright;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+  &__headings {
+    flex-grow: 2;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  &__heading {
+    &--font-size {
+      font-size: 1rem;
+    }
+  }
+}
+
+@include media-medium {
+  .header {
+    &__headings {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@import './terminal.scss';

@@ -5,7 +5,7 @@ import Hamburger from './Hamburger';
 import NavMenu from './NavMenu';
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleMenu = () => {
     setIsOpen(!isOpen);

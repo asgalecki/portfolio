@@ -1,0 +1,93 @@
+.terminal {
+  /* gray-900 */
+  max-width: 450px;
+  min-height: 280px;
+
+  margin: 0 auto;
+
+  font-size: 12px;
+  font-family: 'roboto mono', sans-serif;
+  line-height: 1.2rem;
+  color: $white-regular;
+
+  background-color: $gray-900;
+  border-radius: 5px;
+  opacity: 0.9;
+
+  &__header {
+    border-bottom: 1px solid $gray-800;
+    padding: 0.75rem 2rem;
+  }
+
+  &__header-crop {
+    display: inline-block;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    margin-right: 0.2rem;
+
+    &--red {
+      background-color: $red-500;
+    }
+    &--yellow {
+      background-color: $yellow-300;
+    }
+    &--green {
+      background-color: $green-400;
+    }
+  }
+
+  &__body {
+    padding: 1.5rem 2rem;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+  &__para {
+    &--margin-one {
+      margin-left: 1rem;
+    }
+    &--margin-two {
+      margin-left: 2rem;
+    }
+
+    &--gray {
+      color: rgba(228, 228, 231, 1);
+    }
+
+    &--red {
+      color: $red-500;
+    }
+
+    &--yellow {
+      color: $yellow-300;
+    }
+
+    &--green {
+      color: $green-400;
+    }
+
+    &--blue {
+      color: $blue-400;
+    }
+
+    &--pink {
+      color: $pink-500;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+      border: none;
+    }
+  }
+}
+
+@include media-medium {
+  .terminal {
+    font-size: 14px;
+  }
+}

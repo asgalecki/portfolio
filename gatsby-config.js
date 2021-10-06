@@ -14,7 +14,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`Baumans:400,700`, `Coda:400`],
+        fonts: [`Baumans:400,700`, `Coda:400`, `roboto mono:400`],
         display: 'swap',
       },
     },
