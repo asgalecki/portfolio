@@ -4,6 +4,7 @@ import Header from '../components/Header/Header';
 import Navbar from '../components/Navbar/Navbar';
 import Projects from '../components/Projects/Projects';
 import filterProjects from '../helpers/filterProjects';
+import Footer from '../components/Footer/Footer';
 
 const Home = ({ data }) => {
   const allProjects = data.allMarkdownRemark.nodes;
@@ -26,6 +27,7 @@ const Home = ({ data }) => {
         />
         <Projects type={nonCommercialType} projects={nonCommercialProjects} />
       </main>
+      <Footer />
     </div>
   );
 };

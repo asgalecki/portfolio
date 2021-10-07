@@ -1,0 +1,29 @@
+.footer {
+  margin-top: 2rem;
+  width: 100%;
+  background-color: $navy-dark;
+  text-align: center;
+
+  &__para {
+    padding: 2rem 0;
+  }
+
+  &__border {
+    height: 2px;
+    background: linear-gradient(120deg, $blue-bright, $yellow-300, $green-400);
+    background-size: 400% 400%;
+    animation: change-color 10s ease infinite;
+  }
+
+  @keyframes change-color {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}
