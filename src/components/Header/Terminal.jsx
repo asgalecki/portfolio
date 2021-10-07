@@ -44,6 +44,22 @@ const Terminal = () => {
           ],
         </p>
         <p className="terminal__para--margin-two">
+          linkedIn:
+          <span className="terminal__para--yellow">
+            '
+            <a
+              href="https://www.linkedin.com/in/asgalecki/"
+              target="_blank"
+              className="terminal__para--yellow terminal__link"
+              rel="noreferrer noopener"
+            >
+              linkedin.com/in/asgalecki/
+            </a>
+            '
+          </span>
+          ,
+        </p>
+        <p className="terminal__para--margin-two">
           repo:
           <span className="terminal__para--yellow">
             '
