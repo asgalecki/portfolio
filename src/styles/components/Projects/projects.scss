@@ -1,0 +1,20 @@
+.projects {
+  margin: 5rem 1rem;
+  border-bottom: 1px solid $blue-bright;
+
+  &__body {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+}
+
+@include media-medium {
+  .projects {
+    &__body {
+      justify-content: space-between;
+    }
+  }
+}
+
+@import 'project-details';

@@ -22,7 +22,15 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `projects`,
+        path: `${__dirname}/src/data/`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

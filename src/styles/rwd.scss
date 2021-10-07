@@ -1,7 +1,8 @@
 // RWD for containers/wrappers only
 @include media-small {
   .header,
-  .nav__container {
+  .nav__container,
+  .main {
     width: 540px;
     margin: 0 auto;
   }
@@ -9,21 +10,24 @@
 
 @include media-medium {
   .header,
-  .nav__container {
+  .nav__container,
+  .main {
     width: 720px;
   }
 }
 
 @include media-large {
   .header,
-  .nav__container {
+  .nav__container,
+  .main {
     width: 960px;
   }
 }
 
 @include media-extra-large {
   .header,
-  .nav__container {
+  .nav__container,
+  .main {
     width: 1200px;
   }
 }
