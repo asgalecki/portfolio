@@ -4,7 +4,7 @@ slug: the-cookbook
 date: 2021-01-03T00:00:00+00:00
 thumb: ../images/thumbs/the-cookbook-1.png
 thumbAlt: 'example'
-paragraph: 'Recipe portal, logged in user can add theirs own recipes. Most of the recipes are taken from TheMealDB API.'
+paragraph: 'Non-Commercial: Recipe portal, logged in user can add theirs own recipes. Most of the recipes are taken from TheMealDB API.'
 stack:
   - React
   - Redux

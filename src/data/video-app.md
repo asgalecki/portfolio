@@ -4,7 +4,7 @@ slug: video-app
 date: 2021-01-12T00:00:00+00:00
 thumb: ../images/thumbs/video-app-1.png
 thumbAlt: 'example'
-paragraph: 'This app allows user to store theirs favourite videos from YouTube and Vimeo. It uses React Context API.'
+paragraph: 'Non-Commercial: This app allows user to store theirs favourite videos from YouTube and Vimeo. It uses React Context API.'
 stack:
   - TDD
   - React

@@ -2,7 +2,7 @@
   width: 100%;
   min-height: 300px;
 
-  margin: 2rem 0;
+  margin: 2rem auto;
 
   border: 2px solid $black-dark;
   border-radius: 5px;
@@ -101,7 +101,7 @@
   }
 }
 
-@include media-large {
+@include media-extra-large {
   .project-details {
     flex-basis: 30%;
   }

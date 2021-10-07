@@ -4,7 +4,7 @@ slug: the-final-frontier
 date: 2021-01-01T00:00:00+00:00
 thumb: ../images/thumbs/the-final-frontier-1.png
 thumbAlt: 'example'
-paragraph: 'Star Trek inspired blog about the astronomy and science. Blog contains its own Newsletter.'
+paragraph: 'Non-Commercial: Star Trek inspired blog about the astronomy and science. Blog contains its own Newsletter.'
 stack:
   - Gatsby
   - GraphQl

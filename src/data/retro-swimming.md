@@ -4,7 +4,7 @@ slug: retro-swimming
 date: 2021-02-12T00:00:00+00:00
 thumb: ../images/thumbs/the-final-frontier-1.png
 thumbAlt: 'example'
-paragraph: 'RetroSwimming - website about the swimming and the history of swimming. It uses WordPress as a Headless CMS.'
+paragraph: 'Commercial: RetroSwimming - website about the history of swimming. It uses WordPress as a Headless CMS. In progress...'
 stack:
   - Gatsby
   - GraphQl
