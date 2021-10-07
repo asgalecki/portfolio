@@ -70,7 +70,7 @@
     border-radius: 5px;
     font-family: 'roboto mono', sans-serif;
     font-weight: 700;
-    opacity: 0;
+    opacity: 1;
     @include transition-basic;
 
     &--github {
