@@ -1,0 +1,78 @@
+.contact-form {
+  display: block;
+  font-family: 'roboto mono', sans-serif;
+  color: $white-regular;
+  width: 100%;
+
+  background-color: $gray-900;
+  border-radius: 5px;
+  opacity: 0.9;
+
+  &__list {
+    display: flex;
+    flex-flow: column wrap;
+
+    list-style: none;
+  }
+
+  &__element {
+    margin: 2rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  &__label {
+    cursor: pointer;
+  }
+
+  &__input {
+    background-color: transparent;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    border-bottom: 1px solid $gray-800;
+    color: $yellow-300;
+    font-family: 'roboto mono', sans-serif;
+    width: 80%;
+    padding-left: 0.5rem;
+  }
+
+  &__button {
+    cursor: pointer;
+    padding: 0.5rem 0;
+    width: 110px;
+    height: 2rem;
+    font-family: 'baumans', sans-serif;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    @include transition-basic;
+
+    &--cancel {
+      padding: 0;
+      width: 2rem;
+    }
+
+    &:focus,
+    &:hover {
+      background-color: $yellow-300;
+    }
+  }
+
+  &__status {
+    margin: 1rem 2rem;
+    word-break: break-word;
+
+    &--color {
+      color: $yellow-300;
+      text-transform: lowercase;
+    }
+  }
+}
+
+@include media-large {
+  .contact-form {
+    width: 50%;
+  }
+}

@@ -26,10 +26,6 @@
     @include transition-basic;
     font-size: 2rem;
   }
-
-  &__form {
-    width: 100%;
-  }
 }
 
 @include media-medium {
@@ -65,4 +61,4 @@
   }
 }
 
-// @import './contact-form.scss';
+@import './contact-form.scss';

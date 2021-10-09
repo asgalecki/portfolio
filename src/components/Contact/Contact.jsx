@@ -1,4 +1,5 @@
 import React from 'react';
+import ContactForm from './ContactForm';
 import SocialMedia from './SocialMedia';
 
 const Contact = () => {
@@ -12,7 +13,7 @@ const Contact = () => {
           </p>
           <SocialMedia />
         </div>
-        <div className="contact__form" /* temporary mock */ />
+        <ContactForm />
       </div>
     </section>
   );
