@@ -61,8 +61,18 @@
   }
 
   &__status {
-    margin: 1rem 2rem;
+    margin: 0 2rem;
     word-break: break-word;
+
+    &--inactive {
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    &--active {
+      opacity: 1;
+      transition: opacity 1s ease-in-out;
+    }
 
     &--color {
       color: $yellow-300;

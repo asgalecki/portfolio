@@ -4,11 +4,11 @@ import ContactStatus from './ContactStatus';
 const ContactForm = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-  const [status, setStatus] = useState('');
+  const [isSent, setIsSent] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setStatus('thank you for your message');
+    setIsSent(true);
   };
 
   return (
@@ -59,22 +59,22 @@ const ContactForm = () => {
             onChange={(e) => setMessage(e.target.value)}
           />
         </li>
+        <ContactStatus isSent={isSent} />
         <li className="contact-form__element">
           <button type="submit" className="contact-form__button">
             Send
           </button>
-          {status ? (
+          {isSent ? (
             <button
               type="button"
               className="contact-form__button contact-form__button--cancel"
-              onClick={() => setStatus('')}
+              onClick={() => setIsSent(false)}
             >
               X
             </button>
           ) : null}
         </li>
       </ul>
-      <ContactStatus status={status} />
     </form>
   );
 };
