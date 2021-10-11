@@ -1,10 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import Layout from '../components/Layout';
 import ProjectButton from '../components/Projects/ProjectButton';
+import Modal from '../components/Modal/Modal';
 
 const ProjectPageTemplate = ({ data }) => {
+  const [isTriggered, setIsTriggered] = useState(false);
+  const [modalImage, setModalImage] = useState(null);
+
+  const showModal = (image) => {
+    setModalImage(image);
+    setIsTriggered(true);
+  };
+
+  const hideModal = () => {
+    setIsTriggered(false);
+    setTimeout(() => {
+      setModalImage(null);
+    }, 300);
+  };
+
   const project = data.markdownRemark;
   const frontmatter = project.frontmatter;
 
@@ -19,64 +35,78 @@ const ProjectPageTemplate = ({ data }) => {
     thumbSix: getImage(frontmatter.thumbSix.childImageSharp.gatsbyImageData),
   };
 
+  let i = 0;
+
   return (
-    <Layout>
-      <main className="main">
-        <div className="project-page">
-          <h1 className="project-page__heading">{frontmatter.title}</h1>
-          <section className="project-page__body">
-            <GatsbyImage
-              image={thumbnail.thumbOne}
-              alt={frontmatter.thumbAlt}
-              className="project-page__image"
-            />
-            <div className="project-page__description">
-              <p className="project-page__para">{frontmatter.description}</p>
-              <div className="project-page__footer">
-                <ul className="project-page__stack">
-                  <h6>
-                    <span className="project-page__stack-word">Stack:</span>
-                  </h6>
-                  {frontmatter.stack.map((listItem) => {
-                    return (
-                      <li className="project-page__stack-item">{listItem}</li>
-                    );
-                  })}
-                </ul>
-                <ul className="project-page__buttons">
-                  <span className="project-page__button">
-                    <ProjectButton
-                      data={project}
-                      text={`GitHub`}
-                      modifier={`github`}
-                    />
-                  </span>
-                  <span className="project-page__button">
-                    <ProjectButton
-                      data={project}
-                      text={`Website`}
-                      modifier={`website`}
-                      className="project-page__button"
-                    />
-                  </span>
-                </ul>
+    <React.Fragment>
+      <Modal
+        isTriggered={isTriggered}
+        handleClose={hideModal}
+        modalImage={modalImage}
+        imageAlt={frontmatter.thumbAlt}
+      />
+      <Layout>
+        <main className="main">
+          <div className="project-page">
+            <h1 className="project-page__heading">{frontmatter.title}</h1>
+            <section className="project-page__body">
+              <GatsbyImage
+                image={thumbnail.thumbOne}
+                alt={frontmatter.thumbAlt}
+                className="project-page__image"
+                onClick={() => showModal(thumbnail.thumbOne)}
+              />
+              <div className="project-page__description">
+                <p className="project-page__para">{frontmatter.description}</p>
+                <div className="project-page__footer">
+                  <ul className="project-page__stack">
+                    <h6>
+                      <span className="project-page__stack-word">Stack:</span>
+                    </h6>
+                    {frontmatter.stack.map((listItem) => {
+                      return (
+                        <li className="project-page__stack-item">{listItem}</li>
+                      );
+                    })}
+                  </ul>
+                  <ul className="project-page__buttons">
+                    <span className="project-page__button">
+                      <ProjectButton
+                        data={project}
+                        text={`GitHub`}
+                        modifier={`github`}
+                      />
+                    </span>
+                    <span className="project-page__button">
+                      <ProjectButton
+                        data={project}
+                        text={`Website`}
+                        modifier={`website`}
+                        className="project-page__button"
+                      />
+                    </span>
+                  </ul>
+                </div>
               </div>
-            </div>
-          </section>
-          <section className="project-page__gallery">
-            {Object.values(thumbnail).map((thumb) => {
-              return (
-                <GatsbyImage
-                  image={thumb}
-                  alt={frontmatter.thumbAlt}
-                  className="project-page__gallery-image"
-                />
-              );
-            })}
-          </section>
-        </div>
-      </main>
-    </Layout>
+            </section>
+            <section className="project-page__gallery">
+              {Object.values(thumbnail).map((thumb) => {
+                i++;
+                return (
+                  <GatsbyImage
+                    image={thumb}
+                    alt={frontmatter.thumbAlt}
+                    className="project-page__gallery-image"
+                    key={`project-image-${frontmatter.title}-${i}`}
+                    onClick={() => showModal(thumb)}
+                  />
+                );
+              })}
+            </section>
+          </div>
+        </main>
+      </Layout>
+    </React.Fragment>
   );
 };
 
