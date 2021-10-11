@@ -2,9 +2,15 @@
 title: Video App
 slug: video-app
 date: 2021-01-12T00:00:00+00:00
-thumb: ../images/thumbs/video-app-1.png
+thumbOne: ../images/thumbs/video-app-1.png
+thumbTwo: ../images/thumbs/video-app-2.png
+thumbThree: ../images/thumbs/video-app-3.png
+thumbFour: ../images/thumbs/video-app-4.png
+thumbFive: ../images/thumbs/video-app-5.png
+thumbSix: ../images/thumbs/video-app-6.png
 thumbAlt: 'example'
 paragraph: 'Non-Commercial: This app allows user to store theirs favourite videos from YouTube and Vimeo. It uses React Context API.'
+description: 'Non-Commercial: Star Trek inspired blog about the astronomy and science. Blog contains its own Newsletter.'
 stack:
   - TDD
   - React

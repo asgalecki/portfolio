@@ -36,7 +36,7 @@ export const query = graphql`
           stack
           thumbAlt
           website
-          thumb {
+          thumbOne {
             childImageSharp {
               gatsbyImageData(
                 layout: FULL_WIDTH

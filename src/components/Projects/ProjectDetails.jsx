@@ -5,7 +5,7 @@ import ProjectButton from './ProjectButton';
 
 const ProjectDetails = ({ data }) => {
   const thumbnail = getImage(
-    data.frontmatter.thumb.childImageSharp.gatsbyImageData
+    data.frontmatter.thumbOne.childImageSharp.gatsbyImageData
   );
 
   return (

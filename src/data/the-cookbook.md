@@ -2,9 +2,15 @@
 title: The Cookbook
 slug: the-cookbook
 date: 2021-01-03T00:00:00+00:00
-thumb: ../images/thumbs/the-cookbook-1.png
+thumbOne: ../images/thumbs/the-cookbook-1.png
+thumbTwo: ../images/thumbs/the-cookbook-2.png
+thumbThree: ../images/thumbs/the-cookbook-3.png
+thumbFour: ../images/thumbs/the-cookbook-4.png
+thumbFive: ../images/thumbs/the-cookbook-5.png
+thumbSix: ../images/thumbs/the-cookbook-6.png
 thumbAlt: 'example'
 paragraph: 'Non-Commercial: Recipe portal, logged in user can add theirs own recipes. Most of the recipes are taken from TheMealDB API.'
+description: 'Non-Commercial: Star Trek inspired blog about the astronomy and science. Blog contains its own Newsletter.'
 stack:
   - React
   - Redux
