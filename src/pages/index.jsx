@@ -1,5 +1,7 @@
 import * as React from 'react';
 import { graphql } from 'gatsby';
+import { Helmet } from 'react-helmet';
+
 import Header from '../components/Header/Header';
 import Projects from '../components/Projects/Projects';
 import Contact from '../components/Contact/Contact';
@@ -9,13 +11,22 @@ const Home = ({ data }) => {
   const projects = data.allMarkdownRemark.nodes;
 
   return (
-    <Layout>
-      <Header />
-      <main className="main">
-        <Projects projects={projects} id="projects" />
-        <Contact />
-      </main>
-    </Layout>
+    <React.Fragment>
+      <Helmet>
+        <title>Portfolio: Artur Gałecki</title>
+        <meta
+          name="description"
+          content="Portfolio website that contains some of my finished, commercial and non-commercial projects."
+        />
+      </Helmet>
+      <Layout>
+        <Header />
+        <main className="main">
+          <Projects projects={projects} id="projects" />
+          <Contact />
+        </main>
+      </Layout>
+    </React.Fragment>
   );
 };
 

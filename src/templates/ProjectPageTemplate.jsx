@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { Helmet } from 'react-helmet';
+
 import Layout from '../components/Layout';
-import ProjectButton from '../components/Projects/ProjectButton';
 import Modal from '../components/Modal/Modal';
+import ProjectButton from '../components/Projects/ProjectButton';
 
 const ProjectPageTemplate = ({ data }) => {
   const [isTriggered, setIsTriggered] = useState(false);
@@ -39,6 +41,13 @@ const ProjectPageTemplate = ({ data }) => {
 
   return (
     <React.Fragment>
+      <Helmet>
+        <title>Portfolio: {frontmatter.title}</title>
+        <meta
+          name="description"
+          content={`${frontmatter.paragraph} Stack: ${frontmatter.stack}`}
+        />
+      </Helmet>
       <Modal
         isTriggered={isTriggered}
         handleClose={hideModal}
