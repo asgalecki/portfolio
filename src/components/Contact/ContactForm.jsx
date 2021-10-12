@@ -58,8 +58,10 @@ const ContactForm = () => {
             onChange={(e) => setMessage(e.target.value)}
           />
         </li>
-        <ContactStatus isSent={isSent} />
-        <li className="contact-form__element">
+        <li className="contact-form__element contact-form__element--margin">
+          <ContactStatus isSent={isSent} />
+        </li>
+        <li className="contact-form__element contact-form__element--row">
           <button type="submit" className="contact-form__button">
             Send
           </button>

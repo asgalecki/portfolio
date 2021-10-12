@@ -14,7 +14,7 @@ const Terminal = () => {
             const
           </span>
           <span className="terminal__para--green"> aboutMe</span>
-          <span className="terminal__para--pink"> = </span>
+          <span className="terminal__para--red"> = </span>
           <span className="terminal__para--emphasis terminal__para--blue">
             function
           </span>
@@ -22,7 +22,7 @@ const Terminal = () => {
           {` {`}
         </p>
         <p>
-          <span className="terminal__para--pink terminal__para--margin-one">
+          <span className="terminal__para--red terminal__para--margin-one">
             return
           </span>{' '}
           {` {`}

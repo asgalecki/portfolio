@@ -15,11 +15,19 @@ const ProjectButton = ({ data, text, modifier }) => {
         className="project-details__link"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label={
+          modifier === 'github'
+            ? `GitHub: ${data.frontmatter.title}`
+            : `Website: ${data.frontmatter.title}`
+        }
       >
         <button
           className={`project-details__button project-details__button--${modifier}`}
         >
-          <FontAwesomeIcon icon={modifier === 'github' ? faGithub : faGlobe} />
+          <FontAwesomeIcon
+            icon={modifier === 'github' ? faGithub : faGlobe}
+            alt=""
+          />
           {` ${text}`}
         </button>
       </a>

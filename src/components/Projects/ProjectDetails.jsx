@@ -22,21 +22,21 @@ const ProjectDetails = ({ data }) => {
       </Link>
 
       <div className="project-details__body">
-        <h3 className="project-details__heading">
+        <p className="project-details__heading">
           <Link
             to={`projects/${data.frontmatter.slug}`}
             className="project-details__link"
           >
             {data.frontmatter.title}
           </Link>
-        </h3>
+        </p>
 
         <p className="project-details__para">{data.frontmatter.paragraph}</p>
 
         <ul className="project-details__stack">
-          <h6>
+          <li>
             <span className="project-details__stack-word">Stack:</span>
-          </h6>
+          </li>
           {data.frontmatter.stack.map((listItem) => {
             return <li className="project-details__stack-item">{listItem}</li>;
           })}

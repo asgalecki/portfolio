@@ -18,8 +18,16 @@
   &__element {
     margin: 2rem;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     justify-content: space-between;
+
+    &--row {
+      flex-flow: row nowrap;
+    }
+
+    &--margin {
+      margin: 1rem 2rem;
+    }
   }
 
   &__label {
@@ -61,7 +69,6 @@
   }
 
   &__status {
-    margin: 0 2rem;
     word-break: break-word;
 
     &--inactive {
@@ -77,6 +84,14 @@
     &--color {
       color: $yellow-300;
       text-transform: lowercase;
+    }
+  }
+}
+
+@include media-medium {
+  .contact-form {
+    &__element {
+      flex-flow: row nowrap;
     }
   }
 }

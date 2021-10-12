@@ -12,7 +12,7 @@ const Home = ({ data }) => {
 
   return (
     <React.Fragment>
-      <Helmet>
+      <Helmet htmlAttributes={{ lang: 'en-US' }}>
         <title>Portfolio: Artur Gałecki</title>
         <meta
           name="description"

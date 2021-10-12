@@ -7,7 +7,7 @@
   }
 
   &__body {
-    margin: 2rem 1rem;
+    margin: 1rem auto;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -64,7 +64,7 @@
   }
 
   &__gallery {
-    margin: 2rem 1rem;
+    margin: 1rem 1rem;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -95,6 +95,14 @@
 @include media-medium {
   .project-page {
     margin: 0;
+
+    &__body {
+      margin: 2rem 1rem;
+    }
+
+    &__gallery {
+      margin: 1rem 1rem;
+    }
 
     &__gallery-image {
       width: 49%;

@@ -41,7 +41,7 @@ const ProjectPageTemplate = ({ data }) => {
 
   return (
     <React.Fragment>
-      <Helmet>
+      <Helmet htmlAttributes={{ lang: 'en-US' }}>
         <title>Portfolio: {frontmatter.title}</title>
         <meta
           name="description"

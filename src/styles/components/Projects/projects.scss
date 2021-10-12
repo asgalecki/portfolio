@@ -1,6 +1,6 @@
 .projects {
   margin: 0 1rem;
-  padding: 5rem 0rem 2rem 0rem;
+  padding: 2rem 0rem 2rem 0rem;
   border-bottom: 1px solid $blue-bright;
 
   &__body {
@@ -13,6 +13,7 @@
 @include media-medium {
   .projects {
     margin: 0;
+    padding-top: 5rem;
 
     &__body {
       justify-content: space-between;

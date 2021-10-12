@@ -12,7 +12,7 @@ const SocialMedia = () => {
           rel="noreferrer noopener"
           className="contact__link  contact__link--github"
         >
-          <FontAwesomeIcon icon={faGithub} />
+          <FontAwesomeIcon icon={faGithub} alt="" />
         </a>
       </li>
       <li className="contact__list-item">
@@ -22,7 +22,7 @@ const SocialMedia = () => {
           className="contact__link contact__link--linkedin"
           rel="noreferrer noopener"
         >
-          <FontAwesomeIcon icon={faLinkedin} />
+          <FontAwesomeIcon icon={faLinkedin} alt="" />
         </a>
       </li>
     </ul>
