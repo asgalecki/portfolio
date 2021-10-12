@@ -18,6 +18,13 @@ module.exports = {
         display: 'swap',
       },
     },
+    {
+      resolve: 'gatsby-plugin-anchor-links',
+      options: {
+        offset: 0,
+        duration: 1000,
+      },
+    },
     `gatsby-plugin-image`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,

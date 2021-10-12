@@ -5,7 +5,7 @@ const Projects = ({ projects }) => {
   let i = 0;
 
   return (
-    <section className="projects">
+    <section className="projects" id="projects">
       <h1 className="projects__heading">projects</h1>
       <div className="projects__body">
         {projects.map((project) => {
