@@ -8,7 +8,7 @@ thumbThree: ../images/thumbs/retro-swimming-3.png
 thumbFour: ../images/thumbs/retro-swimming-4.png
 thumbFive: ../images/thumbs/retro-swimming-5.png
 thumbSix: ../images/thumbs/retro-swimming-6.png
-thumbAlt: 'example'
+thumbAlt: 'Retro Swimming website image'
 paragraph: 'Commercial: RetroSwimming - website about the history of swimming. It uses WordPress as a Headless CMS. In progress...'
 description: 'Commercial: RetroSwimming - website about the history of swimming. It uses WordPress as a Headless CMS. In progress...'
 stack:

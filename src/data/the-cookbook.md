@@ -8,7 +8,7 @@ thumbThree: ../images/thumbs/the-cookbook-3.png
 thumbFour: ../images/thumbs/the-cookbook-4.png
 thumbFive: ../images/thumbs/the-cookbook-5.png
 thumbSix: ../images/thumbs/the-cookbook-6.png
-thumbAlt: 'example'
+thumbAlt: 'The Cookbook website image'
 paragraph: 'Non-Commercial: Recipe portal, logged in user can add theirs own recipes. Most of the recipes are taken from TheMealDB API.'
 description: 'Non-Commercial: Recipe portal, logged in user can add theirs own recipes. Most of the recipes are taken from TheMealDB API. User can also add or remove recipes. It uses Redux to deal with the data from API and Firestore.'
 stack:
