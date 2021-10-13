@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import ContactStatus from './ContactStatus';
 
 const ContactForm = () => {
   const [email, setEmail] = useState('');
@@ -49,9 +48,6 @@ const ContactForm = () => {
             value={message}
             onChange={(e) => setMessage(e.target.value)}
           />
-        </li>
-        <li className="contact-form__element contact-form__element--margin">
-          <ContactStatus isSent={isSent} />
         </li>
         <li className="contact-form__element contact-form__element--row">
           <button type="submit" className="contact-form__button">

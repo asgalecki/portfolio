@@ -62,25 +62,6 @@
       background-color: $yellow-300;
     }
   }
-
-  &__status {
-    word-break: break-word;
-
-    &--inactive {
-      opacity: 0;
-      transition: opacity 1s ease-in-out;
-    }
-
-    &--active {
-      opacity: 1;
-      transition: opacity 1s ease-in-out;
-    }
-
-    &--color {
-      color: $yellow-300;
-      text-transform: lowercase;
-    }
-  }
 }
 
 @include media-medium {
