@@ -18,6 +18,10 @@ const Home = ({ data }) => {
           name="description"
           content="Portfolio website that contains some of my finished, commercial and non-commercial projects."
         />
+        <meta
+          name="google-site-verification"
+          content="ycevxzdBHcCUxml1HjmWyc9h258s3BT-NNWo7NK2jwY"
+        />
       </Helmet>
       <Layout>
         <Header />
