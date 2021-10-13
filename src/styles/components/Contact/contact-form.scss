@@ -57,11 +57,6 @@
     font-weight: 700;
     @include transition-basic;
 
-    &--cancel {
-      padding: 0;
-      width: 2rem;
-    }
-
     &:focus,
     &:hover {
       background-color: $yellow-300;

@@ -4,22 +4,14 @@ import ContactStatus from './ContactStatus';
 const ContactForm = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-  const [isSent, setIsSent] = useState(false);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setIsSent(true);
-  };
 
   return (
     <form
       className="contact-form"
       method="post"
-      onSubmit={(e) => handleSubmit(e)}
       netlify-honeypot="bot-field"
       data-netlify="true"
       name="Contact Form"
-      action={false}
     >
       <input type="hidden" name="bot-field" />
       <input type="hidden" name="form-name" value="Contact Form" />
@@ -65,15 +57,6 @@ const ContactForm = () => {
           <button type="submit" className="contact-form__button">
             Send
           </button>
-          {isSent ? (
-            <button
-              type="button"
-              className="contact-form__button contact-form__button--cancel"
-              onClick={() => setIsSent(false)}
-            >
-              X
-            </button>
-          ) : null}
         </li>
       </ul>
     </form>
