@@ -4,7 +4,7 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://asgalecki.netlify.app`,
     title: `Portfolio`,
     description: `My Frontend Portfolio Website`,
     author: `Artur Gałecki https://github.com/asgalecki`,
@@ -23,6 +23,19 @@ module.exports = {
       options: {
         offset: 0,
         duration: 1000,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Portfolio`,
+        short_name: `Portfolio`,
+        start_url: `/`,
+        lang: `en`,
+        background_color: `#FFFFFF`,
+        theme_color: `#000000`,
+        display: `standalone`,
+        icon: `src/images/favicon.png`,
       },
     },
     `gatsby-plugin-image`,
