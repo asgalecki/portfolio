@@ -11,6 +11,7 @@ const SocialMedia = () => {
           target="_blank"
           rel="noreferrer noopener"
           className="contact__link  contact__link--github"
+          aria-label="Link to my GitHub profile"
         >
           <FontAwesomeIcon icon={faGithub} alt="" />
         </a>
@@ -19,8 +20,9 @@ const SocialMedia = () => {
         <a
           href="https://www.linkedin.com/in/asgalecki/"
           target="_blank"
-          className="contact__link contact__link--linkedin"
           rel="noreferrer noopener"
+          className="contact__link contact__link--linkedin"
+          aria-label="Link to my LinkedIn profile"
         >
           <FontAwesomeIcon icon={faLinkedin} alt="" />
         </a>
