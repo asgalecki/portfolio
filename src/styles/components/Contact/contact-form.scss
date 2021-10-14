@@ -41,7 +41,8 @@
     border-bottom: 1px solid $gray-800;
     color: $yellow-300;
     font-family: 'roboto mono', sans-serif;
-    width: 80%;
+    min-width: 80%;
+    max-width: 100%;
     padding-left: 0.5rem;
   }
 
