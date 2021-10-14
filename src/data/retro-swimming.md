@@ -17,6 +17,6 @@ stack:
   - SCSS(+BEM)
   - Bootstrap
 repo: 'https://github.com/asgalecki/retro-swimming'
-website: 'https://asgalecki.netlify.app'
+website: 'https://asgalecki.netlify.app/projects/retro-swimming'
 type: commercial
 ---
