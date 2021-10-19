@@ -16,7 +16,7 @@ stack:
   - GraphQl
   - SCSS(+BEM)
   - Bootstrap
-repo: 'https://github.com/asgalecki/retro-swimming'
+repo: 'https://github.com/asgalecki/retro-swimming-public'
 website: 'https://asgalecki.netlify.app/projects/retro-swimming'
 type: commercial
 ---
